@@ -18,7 +18,7 @@
             }
           ],
           "name": "minecraft:obsidian",
-          "weight": 42
+          "weight": 40
         },
         {
           "type": "minecraft:item",
@@ -34,7 +34,7 @@
             }
           ],
           "name": "minecraft:flint",
-          "weight": 42
+          "weight": 40
         },
         {
           "type": "minecraft:item",
@@ -50,22 +50,22 @@
             }
           ],
           "name": "minecraft:iron_nugget",
-          "weight": 42
+          "weight": 40
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:flint_and_steel",
-          "weight": 42
+          "weight": 40
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:fire_charge",
-          "weight": 42
+          "weight": 40
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_apple",
-          "weight": 5
+          "weight": 15
         },
         {
           "type": "minecraft:item",
@@ -87,7 +87,8 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
             }
           ],
           "name": "minecraft:golden_sword",
@@ -97,7 +98,8 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
             }
           ],
           "name": "minecraft:golden_axe",
@@ -107,7 +109,8 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
             }
           ],
           "name": "minecraft:golden_hoe",
@@ -117,7 +120,8 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
             }
           ],
           "name": "minecraft:golden_shovel",
@@ -127,7 +131,8 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
             }
           ],
           "name": "minecraft:golden_pickaxe",
@@ -137,7 +142,8 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
             }
           ],
           "name": "minecraft:golden_boots",
@@ -147,7 +153,8 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
             }
           ],
           "name": "minecraft:golden_chestplate",
@@ -157,7 +164,8 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
             }
           ],
           "name": "minecraft:golden_helmet",
@@ -167,7 +175,8 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
             }
           ],
           "name": "minecraft:golden_leggings",
@@ -192,12 +201,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_horse_armor",
-          "weight": 6
+          "weight": 5
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:light_weighted_pressure_plate",
-          "weight": 6
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -213,12 +222,12 @@
             }
           ],
           "name": "minecraft:golden_carrot",
-          "weight": 6
+          "weight": 9
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:clock",
-          "weight": 6
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -227,8 +236,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
+                "max": 8.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
@@ -251,8 +260,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
+                "max": 2.0,
+                "min": 1.0
               },
               "function": "minecraft:set_count"
             }
@@ -262,9 +271,34 @@
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 7.0,
-        "min": 3.0
+        "max": 8.0,
+        "min": 4.0
       }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:lodestone",
+          "weight": 2
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:chests/ruined_portal"
